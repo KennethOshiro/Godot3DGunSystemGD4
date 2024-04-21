@@ -1,0 +1,4 @@
+res://default_env.tres
+res://World.tscn
+res://Player.gd
+res://Bullet.gd

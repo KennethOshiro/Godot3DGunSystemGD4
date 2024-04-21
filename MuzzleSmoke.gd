@@ -1,8 +1,8 @@
-extends Spatial
+extends Node3D
 
-onready var particles = $Particles
+@onready var particles = $Particles
 
-export var emit_time = 0.3
+@export var emit_time = 0.3
 var cur_emit_time = 0.0
 
 func emit_smoke():

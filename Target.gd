@@ -1,6 +1,6 @@
-extends StaticBody
+extends StaticBody3D
 
-export var health = 20
+@export var health = 20
 
 func damage(amnt):
 	health -= amnt

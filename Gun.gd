@@ -1,10 +1,10 @@
-extends Spatial
+extends Node3D
 
 signal fire
 
-export var fire_rate = 0.2
+@export var fire_rate = 0.2
 var last_fire_time = 0.0
-export var is_auto = false
+@export var is_auto = false
 
 func shoot_auto():
 	if !is_auto:
@@ -18,4 +18,4 @@ func shoot():
 	emit_signal("fire")
 
 func get_time():
-	return OS.get_ticks_msec() / 1000.0
+	return Time.get_ticks_msec() / 1000.0
